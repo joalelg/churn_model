@@ -6,7 +6,7 @@ import yaml
 import joblib 
 
 webapp_root = "webapp"
-params_path = "parsams.yaml"
+params_path = "params.yaml"
 
 static_dir = os.path.join(webapp_root, "static")
 template_dir = os.path.join(webapp_root, "templates")
