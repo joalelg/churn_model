@@ -10,7 +10,7 @@ The model is build using Kaggle  [churn data](https://www.kaggle.com/c/customer-
 
 
 ## App API and front end display
-The resulting app is displayed allowing to get churn predictions from given introduced values as showin in the image below (click to enlarge).
+The resulting app is displayed allowing to get churn predictions from given introduced values as shown in the image below (click to enlarge).
 ![App demo](images/app_demo.gif)
 
 
