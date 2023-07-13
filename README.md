@@ -9,6 +9,24 @@ A simple ML churn  model trained using using open-source tools. Experiments, API
 The model is build using Kaggle  [churn data](https://www.kaggle.com/c/customer-churn-prediction-2020/data?select=train.csv).
 
 
+## Pipeline Creation using DVC
+To manage the pipeline we use [DVC](https://dvc.org/)  which, together with Git,  allows to  code and data versioning for reproducibility.
+![DVC display](images/dvc01.png)
+
+An advantage of using DVC is that it only executes the stage only if any of it's dependencies (data, code or parametres) are changed.
+![DVC display no changes](images/dvc02.png)
+
+## Experiment cicle with MLFlow
+Store and manage experiments, i.e. model paramenter and hyper parameter variations, using  [MlFlow](https://mlflow.org/). 
+![MlFlow Display](images/mlflow.png)
+
+## Unit Tests
+Set unit tests with Pytest.
+![Unit test display terminal](images/unit_tests_terminal.png)
+![Unit test display vsCode](images/unit_tests_vscode.png)
+
+
+
 ## App API and front end display
 The resulting app is displayed allowing to get churn predictions from given introduced values as shown in the image below (click to enlarge).
 ![App demo](images/app_demo.gif)
