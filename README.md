@@ -6,7 +6,7 @@ Entire machine learning lifecycle with the MLOps tools.
 
 A simple ML churn  model trained using using open-source tools. Experiments, API and front-end deployment are done using Flask, GitHub actions, and Heroku. Finally, production model monitoring is done using EvidentlyAI.
 
-The model is build using Kaggle  [churn data](https://www.kaggle.com/c/customer-churn-prediction-2020/data?select=train.csv) data subset.
+The model is build using Kaggle  [churn data](https://www.kaggle.com/c/customer-churn-prediction-2020/data?select=train.csv) subset.
 #### Data fields
 * number_vmail_messages, numerical. Number of voice-mail messages.
 * total_day_calls, numerical. Total number of day calls.
@@ -14,7 +14,6 @@ The model is build using Kaggle  [churn data](https://www.kaggle.com/c/customer-
 * total_eve_charge, numerical. Total charge of evening calls.
 * total_intl_minutes, numerical. Total minutes of international calls.
 * number_customer_service_calls, numerical. Number of calls to customer service
-
 
 
 ## Pipeline Creation using DVC
@@ -25,8 +24,8 @@ An advantage of using DVC is that it only executes the stage only if any of it's
 ![DVC display no changes](images/dvc02.png)
 
 ## Experiment cicle with MLFlow
-Store and manage experiments, i.e. model paramenter and hyper parameter variations, using  [MlFlow](https://mlflow.org/). 
-![MlFlow Display](images/mlflow.png)
+Store and manage experiments, i.e. model paramenter and hyper parameter variations, using  [MlFlow](https://mlflow.org/). This tool allows to store and compare all experiment settings in order to compare them and promote the  best performing model to proction.
+![MlFlow Display](images/mlflow.png) 
 
 ## Unit Tests
 Set unit tests with Pytest.
@@ -38,6 +37,14 @@ Set unit tests with Pytest.
 ## App API and front end display
 The resulting app is displayed allowing to get churn predictions from given introduced values as shown in the image below (click to enlarge).
 ![App demo](images/app_demo.gif)
+
+## Monitor model using EvidentlyAI
+Evidently  allows to compare new available data with the data used to train  the model. We can generate Dashbords or json outputs to inspect if if the distribution of any of the new data training features has significantly changed (concept drifft) or if there is a model performance decay (model drift).
+![Evidently01](images/Evidently01.png) 
+![Evidently01](images/Evidently03.png) 
+![Evidently01](images/Evidently04.png) 
+
+
 
 
 
