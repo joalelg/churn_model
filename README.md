@@ -24,7 +24,7 @@ An advantage of using DVC is that it only executes the stage only if any of it's
 ![DVC display no changes](images/dvc02.png)
 
 ## Experiment cicle with MLFlow
-Store and manage experiments, i.e. model paramenter and hyper parameter variations, using  [MlFlow](https://mlflow.org/). This tool allows to store and compare all experiment settings in order to compare them and promote the  best performing model to proction.
+Store and manage experiments, i.e. model paramenter and hyper parameter variations, using  [MlFlow](https://mlflow.org/). This tool allows to store and compare all experiment settings in order to compare them and promote the  best performing model to production.
 ![MlFlow Display](images/mlflow.png) 
 
 ## Unit Tests
@@ -33,17 +33,17 @@ Set unit tests with Pytest.
 ![Unit test display vsCode](images/unit_tests_vscode.png)
 
 
-
-## App API and front end display
-The resulting app is displayed allowing to get churn predictions from given introduced values as shown in the image below (click to enlarge).
-![App demo](images/app_demo.gif)
-
 ## Monitor model using EvidentlyAI
-Evidently  allows to compare new available data with the data used to train  the model. We can generate Dashbords or json outputs to inspect if if the distribution of any of the new data training features has significantly changed (concept drifft) or if there is a model performance decay (model drift).
+Evidently  allows to compare new available data with the data used to train  the model. We can generate Dashbords or json outputs to inspect if if the distribution of any of the new data training features has significantly changed (concept drifft) or if there is a model performance decay (model drift).  Eventually, a shell script could be enabled to automatically retrain the model if there is a detected drift.
 ![Evidently01](images/Evidently01.png) 
 ![Evidently01](images/Evidently03.png) 
 ![Evidently01](images/Evidently04.png) 
 
+
+
+## App API and front end display
+A simple web application has been created using a flask that publishes an end point that the front end accesses to present the user interface. The resulting app interface is displayed allowing to get churn predictions from given introduced values as shown in the image below (click to enlarge).
+![App demo](images/app_demo.gif)
 
 
 
