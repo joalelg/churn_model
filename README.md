@@ -41,8 +41,8 @@ Evidently  allows to compare new available data with the data used to train  the
 
 
 
-## App API and front end display
-A simple web application has been created using a flask that publishes an end point that the front end accesses to present the user interface. The resulting app front-end is displayed allowing to get churn predictions from given introduced values as shown in the image below (click to enlarge).
+## App API and front end display with Flask
+A simple web application has been created using [Flask](https://flask.palletsprojects.com/en/2.3.x/) web framework to consume the created model publishing an end point to present the user interface. The resulting app front-end is displayed allowing to get churn predictions from given introduced values as shown in the image below (click to enlarge).
 ![App demo](images/app_demo.gif)
 
 
