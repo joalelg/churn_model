@@ -29,7 +29,7 @@ Store and manage experiments, i.e. model paramenter and hyper parameter variatio
 
 First we launch the server.
 ![MlFlow Display](images/mlflow_launch.png)
-Then we can access the experiments table and its contents.
+Then we can access the experiments dashboard and its contents.
 ![MlFlow Display](images/mlflow.png) 
 
 ## Unit Tests
