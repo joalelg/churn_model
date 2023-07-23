@@ -47,7 +47,6 @@ A simple web application has been created using [Flask](https://flask.palletspro
 
 
 
-
 Project Organization
 ------------
 
