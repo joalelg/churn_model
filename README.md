@@ -26,6 +26,10 @@ An advantage of using DVC is that it only executes the stage only if any of it's
 
 ## Experiment cicle with MLFlow
 Store and manage experiments, i.e. model paramenter and hyper parameter variations, using  [MlFlow](https://mlflow.org/). This tool allows to store and compare all experiment settings in order to compare them and promote the  best performing model to production.
+
+First we launch the server.
+![MlFlow Display](images/mlflow_launch.png)
+Then we can access the experiments table and its contents.
 ![MlFlow Display](images/mlflow.png) 
 
 ## Unit Tests
