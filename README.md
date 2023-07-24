@@ -27,14 +27,14 @@ An advantage of using DVC is that it only executes the stage only if any of it's
 ## Experiment cicle with MLFlow
 Store and manage experiments, i.e. model paramenter and hyper parameter variations, using  [MlFlow](https://mlflow.org/). This tool allows to store and compare all experiment settings in order to compare them and promote the  best performing model to production.
 
-First we launch the server.
-![MlFlow Display](images/mlflow_launch.png)
-Then we can access the experiments dashboard and its contents.
+First we launch the server.  
+
+     $ mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0 -p 1234
+Then the tool will be available for our experiments.
 ![MlFlow Display](images/mlflow.png) 
 
 ## Unit Tests
 Set unit tests with Pytest.
-![Unit test display terminal](images/unit_tests_terminal.png)
 ![Unit test display vsCode](images/unit_tests_vscode.png)
 
 
