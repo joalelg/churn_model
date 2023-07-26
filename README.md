@@ -20,7 +20,7 @@ The model is built using Kaggle  [churn data](https://www.kaggle.com/c/customer-
 To manage the pipeline we use [DVC](https://dvc.org/)  which, together with Git,  allows to  code and data versioning for reproducibility.
 ![DVC display](images/dvc01.png)
 
-An advantage of using DVC is that it only executes the stage only if any of it's dependencies (data, code or parametres) are changed. 
+An advantage of using DVC is that it only executes the stage if any of it's dependencies (data, code or parametres) are changed. 
 
 ![DVC display no changes](images/dvc02.png)
 
