@@ -4,7 +4,7 @@ churn_model
 ## ML churn prediction model MLOps project
 Entire machine learning lifecycle with the MLOps tools.
 
-A simple ML churn  model trained using using open-source tools. Experiments, API and front-end deployment are done using Flask, GitHub actions, and Heroku. Finally, production model monitoring is done using EvidentlyAI.
+A simple ML churn  model trained using open-source tools. Experiments, API and front-end deployment are done using Flask, GitHub actions, and Heroku. Finally, production model monitoring is done using EvidentlyAI.
 
 The model is built using Kaggle  [churn data](https://www.kaggle.com/c/customer-churn-prediction-2020/data?select=train.csv) subset.
 #### Data fields
